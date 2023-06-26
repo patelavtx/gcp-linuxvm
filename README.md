@@ -9,18 +9,18 @@ Create a Ubuntu VM in GCP.
 ```
 
 module "gcp-linuxvm-spoke1" {
-  source = "<repo>"
+  source = "github.com/patelavtx/gcp-linuxvm.git"
   vm_name = var.vm_name
   vpc_name = "gcpspoke1"
   network_subnet_name =  "gcpspoke1"
   gcp_zone = var.gcp_zone
 }
-
+```
 
 ## Provider 
 
 ****For TFC GOOGLE_CREDENTIALS will be needed and 'credentials in provider omitted'**
-**
+
 
 
 
