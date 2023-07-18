@@ -66,6 +66,8 @@ resource "google_compute_instance" "vm_instance_public" {
     subnetwork    = var.network_subnet_name
     access_config { }
   }
+  labels = var.labels
+  
 }
 
 

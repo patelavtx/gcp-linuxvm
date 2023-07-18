@@ -56,3 +56,7 @@ variable "vm_name" {
   default = "gcp-spoke1-vm1"
 }
 
+variable "labels" {
+  description = "vm tags"
+  type        = map(string)
+}
