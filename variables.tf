@@ -59,4 +59,5 @@ variable "vm_name" {
 variable "labels" {
   description = "vm tags"
   type        = map(string)
+  default = { env = "test"}
 }
