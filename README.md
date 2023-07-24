@@ -5,6 +5,7 @@ Create a Ubuntu VM in GCP.
 
 ## Usage
 
+Note/. labels default is 'env = "test"'   labels parameter below can be omitted or added to override default.
 
 ```
 
@@ -14,6 +15,7 @@ module "gcp-linuxvm-spoke1" {
   vpc_name = "gcpspoke1"
   network_subnet_name =  "gcpspoke1"
   gcp_zone = var.gcp_zone
+  labels = var.labels       
 }
 ```
 
