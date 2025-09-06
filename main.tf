@@ -57,7 +57,7 @@ resource "google_compute_instance" "vm_instance_public" {
   tags         = ["ssh","http", "icmp"]
   boot_disk {
     initialize_params {
-      image = var.ubuntu_2004_sku
+      image = var.ubuntu_2204_sku
     }
   }
   metadata_startup_script = data.template_file.linux-metadata.rendered
